@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.cxcolor.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/easeljs-1.0.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cxcolor.js"></script>
+	</head>
+	<body>
+		<div class="head clearfix">
+			<div class="tools clearfix">
+				<label>色彩：</label>
+				<input class="input_cxcolor under_color tool" title="色彩" readonly type="text" id="color_d" />
+			</div>
+			<div class="tools clearfix">
+				<label>粗细：</label>
+				<div class="wide-thin" title="粗细">
+					<i _type="minus">-</i>
+					<input type="text" readonly value="1" class="num-val tool" id="width_d"/>
+					<i _type="add">+</i>
+				</div>
+			</div>
+			<div class="tools clearfix">
+				<label>橡皮：</label>
+				<input class="eraser under_color tool" title="橡皮擦" tool="eraser" readonly id="eraser" />
+			</div>
+			<div class="tools clearfix">
+				<label>形状：</label>
+				<div class="shape clearfix">
+					<span class="line tool" title="线条" tool="line" >-</span>
+					<span class="circle tool" title="圆形" tool="circle">○</span>
+					<span class="rect tool" title="矩形" tool="rect">□</span>
+				</div>
+			</div>
+		</div>
+	    <canvas id="demoCanvas" width="1300" height="1300" class="canvas"></canvas>
+	</body>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<script>
+		new drawDemo.demo();
+	</script>
+</html>

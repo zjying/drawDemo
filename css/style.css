@@ -1,0 +1,89 @@
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+.head{
+	margin: 20px;
+}
+.tools {
+	float: left;
+	margin-left: 20px;
+}
+.tools label{
+	float: left;
+}
+.eraser{
+	width: 18px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.under_color{
+	border: 1px solid #000000;
+	float: left;
+}
+.canvas{
+	border: 2px solid #000000;
+	background: #fff;
+}
+.wide-thin{
+	display: flex;
+  	flex-wrap: wrap;
+	display:-webkit-flex;
+	width: 100px;
+	flex-direction: row;
+	justify-content:center;
+	align-content: space-between;
+	height: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.wide-thin i{
+	display:inline-block;
+	flex: 1;
+	box-sizing: border-box;
+    font-style: normal;
+    text-align: center;
+    
+}
+.wide-thin input{
+	display: flex;
+	display:-webkit-flex;
+	flex: 1;
+	width: 100%;
+	box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+}
+.shape{
+	float: left;
+}
+.circle,.rect,.line{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	font-size: 26px;
+    line-height: 20px;
+}
+.eraser:hover,.circle:hover,.rect:hover,.line:hover{
+	background: #297DED;
+    color: #fff;
+}
+.clickT{
+	background: #297DED;
+    color: #fff;
+}
+.line{
+	margin-left: 0;
+}
