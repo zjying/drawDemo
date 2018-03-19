@@ -81,7 +81,7 @@ this.drawDemo = this.drawDemo || {};
 		})
     	//颜色
     	let color_d = document.querySelector('#color_d');
-    	color_d.addEventListener("click",function(){
+    	color_d.addEventListener("click",function(e){
     		e.stopPropagation();
     	});
     }
