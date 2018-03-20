@@ -38,8 +38,13 @@
 		</div>
 	    <canvas id="demoCanvas" width="1300" height="1300" class="canvas"></canvas>
 	</body>
-	<script type="text/javascript" src="js/demo.js"></script>
+	<!--<script type="text/javascript" src="js/demo.js"></script>-->
+	<script type="text/javascript" src="js/demoES6.js"></script>
 	<script>
-		new drawDemo.demo();
+		//new drawDemo.demo();
+		let box = document.querySelector('.canvas')
+		let demo = new drawDemo({
+			dom: box
+		})
 	</script>
 </html>
