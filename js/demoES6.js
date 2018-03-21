@@ -81,8 +81,8 @@ class drawDemo {
 				_this.flag = _tool;
 			})
 			//颜色
-		let color_d = document.querySelector('#color_d');
-		color_d.addEventListener("click", (e) => {
+		//let color_d = document.querySelector('#color_d');
+		$('#color_d').on("click", (e) => {
 			e.stopPropagation();
 		});
 	}
